@@ -1,0 +1,12 @@
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\DTOs\bin\Debug\net6.0\DTOs.deps.json
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\DTOs\bin\Debug\net6.0\DTOs.dll
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\DTOs\bin\Debug\net6.0\DTOs.pdb
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\DTOs\obj\Debug\net6.0\DTOs.csproj.AssemblyReference.cache
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\DTOs\obj\Debug\net6.0\DTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\DTOs\obj\Debug\net6.0\DTOs.AssemblyInfoInputs.cache
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\DTOs\obj\Debug\net6.0\DTOs.AssemblyInfo.cs
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\DTOs\obj\Debug\net6.0\DTOs.csproj.CoreCompileInputs.cache
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\DTOs\obj\Debug\net6.0\DTOs.dll
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\DTOs\obj\Debug\net6.0\refint\DTOs.dll
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\DTOs\obj\Debug\net6.0\DTOs.pdb
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\DTOs\obj\Debug\net6.0\ref\DTOs.dll

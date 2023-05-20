@@ -1,0 +1,21 @@
+﻿<Window x:Name="LoginPage" x:Class="KieuMinhHieuWPF.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KieuMinhHieuWPF"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="400" Width="600" ResizeMode="NoResize">
+
+    <Canvas>
+        <Label x:Name="lbLogin" Content="Login" Canvas.Left="31" Canvas.Top="23" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lbEmail" Content="Email" Canvas.Left="21" Canvas.Top="95" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Left" />
+        <Label x:Name="lbPassword" Content="Password" Canvas.Left="21" Canvas.Top="155" VerticalAlignment="Top" FontSize="20" HorizontalAlignment="Center" />
+        <TextBox x:Name="txtEmail" Canvas.Left="121" TextWrapping="Wrap"  Canvas.Top="98" Width="444" HorizontalAlignment="Left" VerticalAlignment="Center" Height="34" FontSize="19"  />
+        <PasswordBox x:Name="txtPassword" Canvas.Left="121" Canvas.Top="155" Width="444" HorizontalAlignment="Left" VerticalAlignment="Center" Height="34" FontSize="19"/>
+        <Button x:Name="btnLogin" Content="Login" Canvas.Left="157" Canvas.Top="229" Height="41" Width="109" Click="Login_Click" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Button x:Name="btnClose" Content="Close" Canvas.Left="379" Canvas.Top="229" Height="41" Width="108" Click="Close_Click" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <TextBlock Height="34" x:Name ="txtErrormessage" VerticalAlignment="Top" Width="248"  OpacityMask="Crimson" Foreground="#FFE5572C" Canvas.Left="121" Canvas.Top="59" FontSize="22" HorizontalAlignment="Center"  />
+    </Canvas>
+
+</Window>
