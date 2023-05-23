@@ -18,10 +18,9 @@ namespace DataAccessLayer.Repositories
             _context = context;
         }
 
-        public TEntity Add(TEntity entity)
+        public void Add(TEntity entity)
         {
-            var result= _context.Set<TEntity>().Add(entity);
-            return result.Entity;
+            _context.Set<TEntity>().Add(entity);
         }
 
         public void Delete(TEntity entity)
@@ -34,13 +33,13 @@ namespace DataAccessLayer.Repositories
         public TEntity FindByField(Expression<Func<TEntity, bool>> expression, params Expression<Func<TEntity, object>>[] includes)
         => includes
            .Aggregate(_context.Set<TEntity>().AsQueryable(),
-               (entity, property) => entity.Include(property))
+               (entity, property) => entity.Include(property)).AsNoTracking()
            .Where(expression).FirstOrDefault();
 
         public List<TEntity> FindList(Expression<Func<TEntity, bool>> expression, params Expression<Func<TEntity, object>>[] includes)
         =>  includes
            .Aggregate(_context.Set<TEntity>().AsQueryable(),
-               (entity, property) => entity.Include(property))
+               (entity, property) => entity.Include(property)).AsNoTracking()
            .Where(expression).ToList();
 
 
@@ -48,7 +47,7 @@ namespace DataAccessLayer.Repositories
         {
             return  includes
            .Aggregate(_context.Set<TEntity>().AsQueryable(),
-               (entity, property) => entity.Include(property))
+               (entity, property) => entity.Include(property)).AsNoTracking()
            .ToList();
 
         }
@@ -57,7 +56,13 @@ namespace DataAccessLayer.Repositories
         {
             _context.Set<TEntity>().Attach(entity);
             _context.Entry(entity).State = EntityState.Modified;
+        }
 
+        public void Detached(Expression<Func<TEntity, bool>> expression)
+        {
+            var entity=_context.Set<TEntity>().Where(expression).FirstOrDefault();
+            _context.Entry(entity).State = EntityState.Detached;
+            _context.SaveChanges();
         }
     }
 }

@@ -10,7 +10,8 @@ namespace DataAccessLayer.IRepositories
     {
         public IFlowerBouquetRepository FlowerBouquetRepository { get; }
         public ICustomerRepository CustomerRepository { get; }
-
-        public bool SaveChangeAsync();
+        public ICategoryRepository CategoryRepository { get; }
+        public ISupplierRepository SupplierRepository { get; }
+        public bool SaveChange();
     }
 }

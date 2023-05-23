@@ -2,6 +2,8 @@
 using ApplicationServices.IServices;
 using BusinessObjects.Models;
 using DTOs.CustomerViewModels;
+using KieuMinhHieuWPF.AdminWindows.Customers;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,12 +27,14 @@ namespace KieuMinhHieuWPF
     public partial class LoginWindow : Window
     {
         private readonly ICustomerService _customerService;
+        private readonly IServiceProvider _serviceProvider;
         private readonly string _adminAccount;
         private readonly string _adminPassword;
-        public LoginWindow(ICustomerService customerService)
+        public LoginWindow(ICustomerService customerService,IServiceProvider serviceProvider)
         {
             InitializeComponent();
             _customerService = customerService;
+            _serviceProvider = serviceProvider;
             _adminAccount = GetString.GetStringJson("EmailAdmin");
             _adminPassword = GetString.GetStringJson("PasswordAdmin");
         }
@@ -85,14 +89,15 @@ namespace KieuMinhHieuWPF
 
                 if(IsAdminAccount(loginModel))
                 {
-                    MessageBox.Show("Admin Account!");
+                    _serviceProvider.GetRequiredService<CustomerWindow>().Show();
+                    this.Hide();
                 }
                 var customer = IsValidEmail(loginModel.Email);
                 if (customer!=null)
                 {                   
                     if(customer.Password==loginModel.Password)
                     {
-                        MessageBox.Show(customer.Email);
+                        
                     }
                     else
                     {

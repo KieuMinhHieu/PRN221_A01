@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\App.xaml
-1-1623698816
+71994739359
 
-5-1360351666
-224-102453786
-LoginWindow.xaml;
+111966992273
+226683775447
+AdminWindows\Customers\CustomerWindow.xaml;AdminWindows\Customers\NewCustomerWindow.xaml;AdminWindows\Customers\UpdateCustomerWindow.xaml;AdminWindows\FlowerBouquets\AddFlowerBouquetWindow.xaml;AdminWindows\FlowerBouquets\FlowerBouquetManagementWindow.xaml;AdminWindows\FlowerBouquets\UpdateFlowerBouquetWindow.xaml;LoginWindow.xaml;
 
-False
+True
 

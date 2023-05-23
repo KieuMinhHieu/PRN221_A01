@@ -13,18 +13,28 @@ namespace DataAccessLayer.Repositories
         private readonly FUFlowerBouquetManagementContext _context;
         private readonly ICustomerRepository _customerRepository;
         private readonly IFlowerBouquetRepository _flowerBouquetRepository;
-        public UnitOfWork(FUFlowerBouquetManagementContext context, ICustomerRepository customerRepository, IFlowerBouquetRepository flowerBouquetRepository)
+        private readonly ICategoryRepository _categoryRepository;
+        private readonly ISupplierRepository _supplierRepository;
+        public UnitOfWork(
+            FUFlowerBouquetManagementContext context, 
+            ICustomerRepository customerRepository, 
+            IFlowerBouquetRepository flowerBouquetRepository,
+            ICategoryRepository categoryRepository,
+            ISupplierRepository supplierRepository)
         {
             _context = context;
             _customerRepository = customerRepository;
             _flowerBouquetRepository = flowerBouquetRepository;
+            _categoryRepository = categoryRepository;
+            _supplierRepository = supplierRepository;
         }
 
         public ICustomerRepository CustomerRepository => _customerRepository;
 
         public IFlowerBouquetRepository FlowerBouquetRepository => _flowerBouquetRepository;
-
-        public bool SaveChangeAsync()
+        public ICategoryRepository CategoryRepository => _categoryRepository;
+        public ISupplierRepository SupplierRepository => _supplierRepository;
+        public bool SaveChange()
         {
             return _context.SaveChanges() > 0;
         }

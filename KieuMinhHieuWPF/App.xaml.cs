@@ -4,6 +4,8 @@ using BusinessObjects.Models;
 using DataAccessLayer;
 using DataAccessLayer.IRepositories;
 using DataAccessLayer.Repositories;
+using KieuMinhHieuWPF.AdminWindows.Customers;
+using KieuMinhHieuWPF.AdminWindows.FlowerBouquets;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -24,15 +26,28 @@ namespace KieuMinhHieuWPF
         public App()
         {
             ServiceCollection services = new ServiceCollection();
-            services.AddSingleton<LoginWindow>();
+           
             services.AddServices();
+            ConfigureServices(services);
             serviceProvider = services.BuildServiceProvider();
+        }
+
+        private void ConfigureServices(ServiceCollection services)
+        {
+            services.AddSingleton<NewCustomerWindow>();
+            services.AddSingleton<UpdateCustomerWindow>();
+            services.AddSingleton<FlowerBouquetManagementWindow>();
+            services.AddSingleton<CustomerWindow>();
+            services.AddSingleton<LoginWindow>();
+            services.AddSingleton<AddFlowerBouquetWindow>();
+            services.AddSingleton<UpdateFlowerBouquetWindow>();
         }
 
         private void OnStartup(object sender, StartupEventArgs e)
         {
-            var windowMainWindow = serviceProvider.GetService<LoginWindow>();
+            var windowMainWindow = serviceProvider.GetService<FlowerBouquetManagementWindow>();
             windowMainWindow.Show();
+            
         }
     }
 }

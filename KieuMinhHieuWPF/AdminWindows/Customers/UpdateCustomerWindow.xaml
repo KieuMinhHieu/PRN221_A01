@@ -1,0 +1,28 @@
+﻿<Window x:Class="KieuMinhHieuWPF.AdminWindows.Customers.UpdateCustomerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KieuMinhHieuWPF.AdminWindows.Customers"
+        mc:Ignorable="d"
+        Title="UpdateCustomerWindow" Height="550" Width="800">
+    <Canvas>
+        <Label Content="Update Customer"  Canvas.Top="8" Canvas.Left="66" HorizontalAlignment="Left" VerticalAlignment="Top" Width="224" Height="43" FontSize="26" FontWeight="Bold" />
+        <Label Content="Email" Canvas.Left="61"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="90" FontSize="18" Canvas.Top="176"/>
+        <Label Content="Name" Canvas.Top="131"  Canvas.Left="61"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="90" FontSize="18"/>
+        <Label Content="City" Canvas.Left="61"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="90" FontSize="18" Canvas.Top="230"/>
+        <Label Content="Country" Canvas.Left="61"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="90" FontSize="18" Canvas.Top="284"/>
+        <Label Content="Password" Canvas.Left="61"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="90" FontSize="18" Canvas.Top="338"/>
+        <Label Content="Birthday" Canvas.Left="64"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="90" FontSize="18" Canvas.Top="397"/>
+        <TextBox x:Name="txtName" Canvas.Left="231" TextWrapping="Wrap"  Canvas.Top="131" Width="429" Height="36" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtEmail" Canvas.Left="231" TextWrapping="Wrap"  Canvas.Top="176"  Width="429" Height="36" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtCity" Canvas.Left="231" TextWrapping="Wrap"  Canvas.Top="230"  Width="429" Height="36" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtCountry" Canvas.Left="231" TextWrapping="Wrap"  Canvas.Top="284"  Width="429" Height="36" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <PasswordBox x:Name="txtPassword" IsEnabled="False" Canvas.Left="231" Canvas.Top="338"  Width="429" Height="36" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <DatePicker x:Name="dtBirthday" Canvas.Left="234" Canvas.Top="401" Height="36" Width="167" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="btnUpdate" Content="Update" Canvas.Left="234" Canvas.Top="463" Height="38" Width="90" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BtnUpdateInfor"/>
+        <Button x:Name="btnClose" Content="Close" Canvas.Left="508" Canvas.Top="463" Height="38" Width="90" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BtnClose"/>
+        <Label Content="Id" Canvas.Top="75"  Canvas.Left="61" Height="36" Width="90" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtId" Canvas.Left="231" IsEnabled="False" TextWrapping="Wrap"  Canvas.Top="75" Width="429" Height="36" FontSize="18" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Canvas>
+</Window>

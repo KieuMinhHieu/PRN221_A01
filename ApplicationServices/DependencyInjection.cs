@@ -1,4 +1,5 @@
 ﻿using ApplicationServices.IServices;
+using ApplicationServices.Mappers;
 using ApplicationServices.Services;
 using BusinessObjects.Models;
 using DataAccessLayer.IRepositories;
@@ -22,9 +23,17 @@ namespace DataAccessLayer
             services.AddScoped<IFlowerBouquetRepository, FlowerBouquetRepository>();
             services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<IFlowerBouquetService, FlowerBouquetService>();
+
+            services.AddScoped<ISupplierRepository,SupplierRepository>();
+            services.AddScoped<ISupplierService, SupplierService>();
+
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+
             services.AddSingleton(typeof(FUFlowerBouquetManagementContext));
             #endregion
 
+            services.AddAutoMapper(typeof(MapperConfigurationsProfile).Assembly);
 
             return services;
         }

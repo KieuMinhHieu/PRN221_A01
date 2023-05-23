@@ -65,3 +65,17 @@ C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuW
 C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\KieuMinhHieuWPF.csproj.CopyComplete
 C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\bin\Debug\net6.0-windows\DTOs.dll
 C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\bin\Debug\net6.0-windows\DTOs.pdb
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\AdminWindows\Customers\CustomerWindow.g.cs
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\AdminWindows\Customers\CustomerWindow.baml
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\bin\Debug\net6.0-windows\AutoMapper.dll
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\bin\Debug\net6.0-windows\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\AdminWindows\Customers\NewCustomerWindow.g.cs
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\AdminWindows\Customers\NewCustomerWindow.baml
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\AdminWindows\Customers\UpdateCustomerWindow.g.cs
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\AdminWindows\Customers\UpdateCustomerWindow.baml
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\AdminWindows\FlowerBouquets\FlowerBouquetManagementWindow.g.cs
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\AdminWindows\FlowerBouquets\FlowerBouquetManagementWindow.baml
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\AdminWindows\FlowerBouquets\AddFlowerBouquetWindow.g.cs
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\AdminWindows\FlowerBouquets\AddFlowerBouquetWindow.baml
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\AdminWindows\FlowerBouquets\UpdateFlowerBouquetWindow.g.cs
+C:\Users\minhh\OneDrive\Desktop\PRN211_A01\KieuMinhHieu_SE1605_A01\KieuMinhHieuWPF\obj\Debug\net6.0-windows\AdminWindows\FlowerBouquets\UpdateFlowerBouquetWindow.baml

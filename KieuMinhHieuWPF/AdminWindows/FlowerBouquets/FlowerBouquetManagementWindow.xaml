@@ -1,0 +1,47 @@
+﻿<Window x:Class="KieuMinhHieuWPF.AdminWindows.FlowerBouquets.FlowerBouquetManagementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KieuMinhHieuWPF.AdminWindows.FlowerBouquets"
+        mc:Ignorable="d"
+        Title="FlowerBouquetManagementWindow" Height="450" Width="800">
+    <DockPanel>
+
+        <Menu DockPanel.Dock="Top" Height="29">
+            <MenuItem Header="_File" Height="25" FontSize="18">
+                <MenuItem Header="_New" />
+                <MenuItem Header="_Open" />
+                <MenuItem Header="_Save" />
+                <Separator />
+                <MenuItem Header="_Logout" Click="BtnLogout" />
+            </MenuItem>
+            <MenuItem Header="_Tool" Height="25" FontSize="18" >
+                <MenuItem Header="_CustomertManagement" Click="BtnCustomertManagement" />
+                <MenuItem Header="_OderManagement" Click="BtnOderManagement" />
+            </MenuItem>
+        </Menu>
+        <Canvas>
+            <TextBox x:Name="txtSearch"  Canvas.Left="489" TextWrapping="Wrap" Canvas.Top="10" Width="288" Height="29" FontSize="16" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" TextChanged="TxtSearchChanged" VerticalAlignment="Center"/>
+            <Label Content="Search:"  Canvas.Left="415" Canvas.Top="10" Height="29" HorizontalAlignment="Left" VerticalAlignment="Top" Width="69" FontSize="16"/>
+            <DataGrid Height="230" Width="800"  HorizontalAlignment="Center" Canvas.Top="44" VerticalAlignment="Top" x:Name="dgvFlowerBouquet" AutoGenerateColumns="False" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="*" Header="Id"    Binding="{Binding FlowerBouquetId}"/>
+                    <DataGridTextColumn Width="*" Header="Name"  Binding="{Binding FlowerBouquetName}"/>
+                    <DataGridTextColumn Width="*" Header="Category" Binding="{Binding CategoryName  }"/>
+                    <DataGridTextColumn Width="*" Header="Description"   Binding="{Binding Description}"/>
+                    <DataGridTextColumn Width="*" Header="UnitPrice" Binding="{Binding UnitPrice}"/>
+                    <DataGridTextColumn Width="*" Header="UnitsInStock"  Binding="{Binding UnitsInStock}"/>
+                    <DataGridTextColumn Width="*" Header="Supplier" Binding="{Binding SupplierName}"/>
+                    <DataGridTextColumn Width="*" Header="IsActive"   Binding="{Binding FlowerBouquetStatus}"/>
+                </DataGrid.Columns>
+
+            </DataGrid>
+            <Button Content="New" Canvas.Left="172" Canvas.Top="320" Height="35" Width="76" HorizontalAlignment="Left" VerticalAlignment="Center" Click="BtnNewCustomer" />
+            <Button Content="Update" Canvas.Left="362" Canvas.Top="320" Height="35" Width="76" HorizontalAlignment="Left" VerticalAlignment="Center" Click="BtnUpdateCustomer"/>
+            <Button Content="Delete" Canvas.Left="568" Canvas.Top="320" Height="35" Width="76" HorizontalAlignment="Left" VerticalAlignment="Center" Click="BtnDeleteCustomer"/>
+        </Canvas>
+
+
+    </DockPanel>
+</Window>

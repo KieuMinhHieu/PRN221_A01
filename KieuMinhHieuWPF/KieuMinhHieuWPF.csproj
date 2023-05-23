@@ -12,8 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AdminWindows\Customers\" />
-    <Folder Include="AdminWindows\FlowerBouquets\" />
     <Folder Include="AdminWindows\Order\" />
   </ItemGroup>
 

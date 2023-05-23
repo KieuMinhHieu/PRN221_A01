@@ -1,0 +1,26 @@
+﻿<Window x:Class="KieuMinhHieuWPF.AdminWindows.FlowerBouquets.AddFlowerBouquetWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KieuMinhHieuWPF.AdminWindows.FlowerBouquets"
+        mc:Ignorable="d"
+        Title="AddFlowerBouquetWindow" Height="550" Width="800">
+    <Canvas>
+        <Label Content="New FlowerBouquet"  Canvas.Top="8" Canvas.Left="66" HorizontalAlignment="Left" VerticalAlignment="Center" Width="306" Height="43" FontSize="26" FontWeight="Bold" />
+        <Label Content="Category" Canvas.Left="60"  HorizontalAlignment="Center" VerticalAlignment="Top" Height="36" Width="90" FontSize="18" Canvas.Top="114"/>
+        <Label Content="Name" Canvas.Top="69"  Canvas.Left="60"  HorizontalAlignment="Left" VerticalAlignment="Center" Height="36" Width="90" FontSize="18"/>
+        <Label Content="Description" Canvas.Left="60"  HorizontalAlignment="Left" VerticalAlignment="Center" Height="36" Width="122" FontSize="18" Canvas.Top="168"/>
+        <Label Content="UnitPrice" Canvas.Left="60"  HorizontalAlignment="Center" VerticalAlignment="Top" Height="36" Width="90" FontSize="18" Canvas.Top="282"/>
+        <Label Content="UnitsInStock" Canvas.Left="60"  HorizontalAlignment="Center" VerticalAlignment="Top" Height="36" Width="154" FontSize="18" Canvas.Top="336"/>
+        <Label Content="Supplier" Canvas.Left="60"  HorizontalAlignment="Center" VerticalAlignment="Top" Height="36" Width="158" FontSize="18" Canvas.Top="390"/>
+        <TextBox x:Name="txtName" Canvas.Left="230" TextWrapping="Wrap"  Canvas.Top="69" Width="429" Height="36" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="cbCategory" Canvas.Left="230"  Canvas.Top="114"  Width="429" Height="36" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtDescription" Canvas.Left="230" TextWrapping="Wrap"  Canvas.Top="168"  Width="429" Height="99" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtUnitPrice"  PreviewTextInput="NumericInputOnly" Canvas.Left="230" TextWrapping="Wrap"  Canvas.Top="282"  Width="429" Height="36" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtUnitsInStock"  PreviewTextInput="NumericInputOnly" Canvas.Left="230" Canvas.Top="336"  Width="429" Height="36" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="cbSupplier" Canvas.Left="230" Canvas.Top="390"  Width="429" Height="36" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnSave" Content="Save" Canvas.Left="230" Canvas.Top="450" Height="38" Width="90" HorizontalAlignment="Left" VerticalAlignment="Center" Click="BtnSaveInfor"/>
+        <Button x:Name="btnClose" Content="Close" Canvas.Left="504" Canvas.Top="450" Height="38" Width="90" HorizontalAlignment="Center" VerticalAlignment="Top" Click="BtnClose"/>
+    </Canvas>
+</Window>
